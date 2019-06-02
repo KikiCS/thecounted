@@ -5,6 +5,8 @@ Interactive visualisation of [The Counted](https://www.theguardian.com/us-news/n
 
 I got the idea from this [BuzzFeed article](https://www.buzzfeednews.com/article/peteraldhous/race-and-police-shootings) and [git repository](https://github.com/BuzzFeedNews/2015-12-fatal-police-shootings).
 
-I use Python Bokeh library to generate the plot in html format, the result can be seen here.
+Data processing is done in a jupyter notebook.
+I use Python Bokeh library to generate the plot in html format, **the result can be seen [here](https://kikics.github.io/thecounted/)**.
 
+### Static image:
 ![PNG version](bokeh_thecounted.png)
