@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>The Counted Visualization</title>
+      
+      
+        
+          
+        <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-1.0.4.min.css" type="text/css" />
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.0.4.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="3add593a-182f-4554-89e2-137bb04a784e" data-root-id="1217"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1941">
+          {"e93df322-9606-4f15-b1eb-4323f8828036":{"roots":{"references":[{"attributes":{"below":[{"id":"1227","type":"CategoricalAxis"}],"left":[{"id":"1231","type":"LinearAxis"}],"renderers":[{"id":"1227","type":"CategoricalAxis"},{"id":"1230","type":"Grid"},{"id":"1231","type":"LinearAxis"},{"id":"1235","type":"Grid"},{"id":"1244","type":"BoxAnnotation"},{"id":"1249","type":"BoxAnnotation"},{"id":"1266","type":"Legend"},{"id":"1257","type":"GlyphRenderer"},{"id":"1272","type":"GlyphRenderer"},{"id":"1288","type":"GlyphRenderer"}],"sizing_mode":"scale_both","title":{"id":"1216","type":"Title"},"toolbar":{"id":"1242","type":"Toolbar"},"x_range":{"id":"1219","type":"FactorRange"},"x_scale":{"id":"1223","type":"CategoricalScale"},"y_range":{"id":"1221","type":"Range1d"},"y_scale":{"id":"1225","type":"LinearScale"}},"id":"1217","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"1223","type":"CategoricalScale"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":0},"top":{"field":"populethn"},"width":{"value":0.4},"x":{"field":"ethnicities","transform":{"id":"1253","type":"Dodge"}}},"id":"1256","type":"VBar"},{"attributes":{"dimension":1,"plot":{"id":"1217","subtype":"Figure","type":"Plot"},"ticker":{"id":"1232","type":"BasicTicker"}},"id":"1235","type":"Grid"},{"attributes":{"overlay":{"id":"1244","type":"BoxAnnotation"}},"id":"1238","type":"BoxZoomTool"},{"attributes":{},"id":"1260","type":"CategoricalTickFormatter"},{"attributes":{"callback":null,"mode":"vline","names":["unarmed"],"tooltips":[["Population","@populethn{(00.00)}%"],["Killed","@killed{(00.00)}%"],["Unarmed","@unarmed{(00.00)}%"]]},"id":"1300","type":"HoverTool"},{"attributes":{"formatter":{"id":"1262","type":"BasicTickFormatter"},"major_label_text_font_size":{"value":"16pt"},"plot":{"id":"1217","subtype":"Figure","type":"Plot"},"ticker":{"id":"1232","type":"BasicTicker"}},"id":"1231","type":"LinearAxis"},{"attributes":{},"id":"1240","type":"SaveTool"},{"attributes":{},"id":"1262","type":"BasicTickFormatter"},{"attributes":{"label":{"value":"Ethnicity % over population"},"renderers":[{"id":"1257","type":"GlyphRenderer"}]},"id":"1267","type":"LegendItem"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":0},"top":{"field":"killed"},"width":{"value":0.4},"x":{"field":"ethnicities","transform":{"id":"1268","type":"Dodge"}}},"id":"1271","type":"VBar"},{"attributes":{"callback":null,"overlay":{"id":"1249","type":"BoxAnnotation"}},"id":"1241","type":"BoxSelectTool"},{"attributes":{"fill_color":{"value":"#abdda4"},"line_color":{"value":null},"line_width":{"value":0},"top":{"field":"unarmed"},"width":{"value":0.4},"x":{"field":"ethnicities","transform":{"id":"1284","type":"Dodge"}}},"id":"1286","type":"VBar"},{"attributes":{},"id":"1237","type":"WheelZoomTool"},{"attributes":{"range":{"id":"1219","type":"FactorRange"}},"id":"1284","type":"Dodge"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"line_width":{"value":0},"top":{"field":"unarmed"},"width":{"value":0.4},"x":{"field":"ethnicities","transform":{"id":"1284","type":"Dodge"}}},"id":"1287","type":"VBar"},{"attributes":{"data_source":{"id":"1001","type":"ColumnDataSource"},"glyph":{"id":"1286","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"name":"unarmed","nonselection_glyph":{"id":"1287","type":"VBar"},"selection_glyph":null,"view":{"id":"1289","type":"CDSView"}},"id":"1288","type":"GlyphRenderer"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"1249","type":"BoxAnnotation"},{"attributes":{"callback":null,"end":80},"id":"1221","type":"Range1d"},{"attributes":{"source":{"id":"1001","type":"ColumnDataSource"}},"id":"1289","type":"CDSView"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"plot":null,"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"1244","type":"BoxAnnotation"},{"attributes":{"label":{"value":"Unarmed % over total unarmed"},"renderers":[{"id":"1288","type":"GlyphRenderer"}]},"id":"1299","type":"LegendItem"},{"attributes":{"plot":null,"text":"The Counted Visualization (data from 2015 and 2016)","text_font_size":{"value":"20pt"}},"id":"1216","type":"Title"},{"attributes":{"source":{"id":"1001","type":"ColumnDataSource"}},"id":"1258","type":"CDSView"},{"attributes":{},"id":"1225","type":"LinearScale"},{"attributes":{"callback":null,"data":{"ethnicities":["White","Latino","Black","Others"],"killed":[52.83,17.24,26.14,3.79],"populethn":[61.72,17.66,12.38,8.23],"unarmed":[50.25,16.75,30.25,2.75]},"selected":{"id":"1068","type":"Selection"},"selection_policy":{"id":"1067","type":"UnionRenderers"}},"id":"1001","type":"ColumnDataSource"},{"attributes":{"range":{"id":"1219","type":"FactorRange"},"value":-0.25},"id":"1268","type":"Dodge"},{"attributes":{"grid_line_color":{"value":null},"plot":{"id":"1217","subtype":"Figure","type":"Plot"},"ticker":{"id":"1228","type":"CategoricalTicker"}},"id":"1230","type":"Grid"},{"attributes":{"fill_color":{"value":"#2b83ba"},"line_color":{"value":null},"line_width":{"value":0},"top":{"field":"populethn"},"width":{"value":0.4},"x":{"field":"ethnicities","transform":{"id":"1253","type":"Dodge"}}},"id":"1255","type":"VBar"},{"attributes":{"callback":null,"factors":["White","Latino","Black","Others"]},"id":"1219","type":"FactorRange"},{"attributes":{"items":[{"id":"1267","type":"LegendItem"},{"id":"1283","type":"LegendItem"},{"id":"1299","type":"LegendItem"}],"label_text_font_size":{"value":"16pt"},"plot":{"id":"1217","subtype":"Figure","type":"Plot"}},"id":"1266","type":"Legend"},{"attributes":{"axis_label":"Ethnicity","axis_label_text_font_size":{"value":"18pt"},"formatter":{"id":"1260","type":"CategoricalTickFormatter"},"major_label_text_font_size":{"value":"16pt"},"minor_tick_line_color":{"value":null},"plot":{"id":"1217","subtype":"Figure","type":"Plot"},"ticker":{"id":"1228","type":"CategoricalTicker"}},"id":"1227","type":"CategoricalAxis"},{"attributes":{},"id":"1228","type":"CategoricalTicker"},{"attributes":{},"id":"1067","type":"UnionRenderers"},{"attributes":{"data_source":{"id":"1001","type":"ColumnDataSource"},"glyph":{"id":"1255","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"name":"populethn","nonselection_glyph":{"id":"1256","type":"VBar"},"selection_glyph":null,"view":{"id":"1258","type":"CDSView"}},"id":"1257","type":"GlyphRenderer"},{"attributes":{"label":{"value":"Killed % over total killed"},"renderers":[{"id":"1272","type":"GlyphRenderer"}]},"id":"1283","type":"LegendItem"},{"attributes":{"fill_color":{"value":"#fdae61"},"line_color":{"value":null},"line_width":{"value":0},"top":{"field":"killed"},"width":{"value":0.4},"x":{"field":"ethnicities","transform":{"id":"1268","type":"Dodge"}}},"id":"1270","type":"VBar"},{"attributes":{},"id":"1239","type":"ResetTool"},{"attributes":{},"id":"1068","type":"Selection"},{"attributes":{"data_source":{"id":"1001","type":"ColumnDataSource"},"glyph":{"id":"1270","type":"VBar"},"hover_glyph":null,"muted_glyph":null,"name":"killed","nonselection_glyph":{"id":"1271","type":"VBar"},"selection_glyph":null,"view":{"id":"1273","type":"CDSView"}},"id":"1272","type":"GlyphRenderer"},{"attributes":{},"id":"1232","type":"BasicTicker"},{"attributes":{"range":{"id":"1219","type":"FactorRange"},"value":0.25},"id":"1253","type":"Dodge"},{"attributes":{"source":{"id":"1001","type":"ColumnDataSource"}},"id":"1273","type":"CDSView"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1236","type":"PanTool"},{"id":"1237","type":"WheelZoomTool"},{"id":"1238","type":"BoxZoomTool"},{"id":"1239","type":"ResetTool"},{"id":"1240","type":"SaveTool"},{"id":"1241","type":"BoxSelectTool"},{"id":"1300","type":"HoverTool"}]},"id":"1242","type":"Toolbar"},{"attributes":{},"id":"1236","type":"PanTool"}],"root_ids":["1217"]},"title":"Bokeh Application","version":"1.0.4"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1941').textContent;
+                  var render_items = [{"docid":"e93df322-9606-4f15-b1eb-4323f8828036","roots":{"1217":"3add593a-182f-4554-89e2-137bb04a784e"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        embed_document(root);
+                        clearInterval(timer);
+                      }
+                      attempts++;
+                      if (attempts > 100) {
+                        console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        clearInterval(timer);
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
